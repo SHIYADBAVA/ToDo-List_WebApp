@@ -1,0 +1,13 @@
+html,body{
+    background-image: url('https://image.freepik.com/free-photo/coffee-list_23-2148475402.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    font-family: 'Numans', sans-serif;
+    }
+.navbar{
+    padding: 10%;
+}
+#navbar-nav{
+    float: right;
+}
