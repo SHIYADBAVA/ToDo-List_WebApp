@@ -1,16 +1,15 @@
-var user = document.getElementById("user");
-var pwd = document.getElementById("pwd");
-function validate(){
-    if(user.value == "admin" && pwd.value == "12345")
+const { Callbacks } = require("jquery");
+
+function validate(Callback){
+    if($("#user").val()=="admin" && $("#pwd").val()=="12345")
     {
-        return true;
+        Callback();
     }
-    else{
-        alert("invalid credentials!!");
-        return false;
+    else
+    {
+        alert("Invalid Credentials!!!");
     }
 }
-function home(){
-    var a =document.getElementById("loginform");
-    a.onsubmit("index.html")
+function Callback(){
+    $("#loginform").attr("action","index.html");
 }
