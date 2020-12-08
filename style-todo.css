@@ -1,11 +1,12 @@
 html,body{
-    background-image: url('https://image.freepik.com/free-photo/coffee-list_23-2148475402.jpg');
+    background-image: url('./images/bgtodos.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     font-family: 'Gill Sans', 'Gill Sans MT', ' Calibri', 'Trebuchet MS', 'sans-serif'; 
 }
 .navbar{
     padding: 10%;
+    !important
 }
 #navbar-nav{
     float: right;

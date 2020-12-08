@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Numans');
 /* html and body */
 html,body{
-background-image: url('https://image.freepik.com/free-photo/coffee-list_23-2148475402.jpg');
+background-image: url('./images/coffee-list.jpg');
 background-size: cover;
 background-repeat: no-repeat;
 height: 100%;
-font-family: 'Numans', sans-serif;
+font-family: 'Gill Sans', 'Gill Sans MT', ' Calibri', 'Trebuchet MS', 'sans-serif';
 }
 /* container div */
 .container{

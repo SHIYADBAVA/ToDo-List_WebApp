@@ -31,7 +31,7 @@ $(document).ready(function () {
             entry += '<td>' + value.title + '</td>'; 
             if(value.completed==false)
             {
-                entry += '<td>' + `<input type="checkbox" >` + '</td>';
+                entry += '<td>' + `<input id="tasksts" type="checkbox"  onchange="return Validate();">` + '</td>';
             }
             else{
                 entry += '<td>' + '<input type="checkbox" disabled checked>' + '</td';
@@ -45,3 +45,26 @@ $(document).ready(function () {
         $('#table').append(entry); 
     }); 
 }); 
+
+function Validate() {
+    var checked = 0;
+
+    //Reference the Table.
+    var tblFruits = document.getElementById("table");
+
+    //Reference all the CheckBoxes in Table.
+    var chks = tblFruits.getElementsByTagName("INPUT");
+
+    //Loop and count the number of checked CheckBoxes.
+    for (var i = 0; i < chks.length; i++) {
+        if (chks[i].checked) {
+            checked++;
+        }
+    }
+    if (checked%5 == 0) {
+        alert("Congrats, You completed 5 tasks successfully.");
+        return true;
+    } else {
+        return false;
+    }
+};
