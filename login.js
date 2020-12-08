@@ -11,5 +11,5 @@ function validate(Callback){
     }
 }
 function Callback(){
-    $("#loginform").attr("action","index.html");
+    $("#loginform").attr("action","main.html");
 }
