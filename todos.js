@@ -6,6 +6,8 @@ $(document).ready(function () {
         var entry = ''; 
 
         // ITERATING THROUGH OBJECTS 
+            //CONSTRUCTION OF ROWS HAVING 
+            // DATA FROM JSON OBJECT 
         $.each(data, function (key, value) { 
         if(entry==''){
                 entry += '<tr>'; 
@@ -20,8 +22,7 @@ $(document).ready(function () {
             entry += '</tr>'; 
 
             }
-            //CONSTRUCTION OF ROWS HAVING 
-            // DATA FROM JSON OBJECT 
+
         else
             entry += '<tr>'; 
             entry += '<td>' + value.userId + '</td>'; 

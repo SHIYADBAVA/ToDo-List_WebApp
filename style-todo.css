@@ -6,7 +6,6 @@ html,body{
 }
 .navbar{
     padding: 10%;
-    !important
 }
 #navbar-nav{
     float: right;
