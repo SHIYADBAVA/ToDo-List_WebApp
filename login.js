@@ -13,3 +13,4 @@ function validate(Callback){
 function Callback(){
     $("#loginform").attr("action","main.html");
 }
+// DESIGNED AND DEVELOPED BY MUHAMMED SHIYAD CM
