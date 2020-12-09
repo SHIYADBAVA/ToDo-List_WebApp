@@ -51,10 +51,10 @@ function Validate() {
     var checked = 0;
 
     //Reference the Table.
-    var tblFruits = document.getElementById("table");
+    var table = document.getElementById("table");
 
     //Reference all the CheckBoxes in Table.
-    var chks = tblFruits.getElementsByTagName("INPUT");
+    var chks = table.getElementsByTagName("input");
 
     //Loop and count the number of checked CheckBoxes.
     for (var i = 0; i < chks.length; i++) {
@@ -62,7 +62,7 @@ function Validate() {
             checked++;
         }
     }
-    if (checked%5 == 0) {
+    if (checked%5 == 0 && checked!=90) {
         alert("Congrats, You completed 5 tasks successfully.");
         return true;
     } else {
